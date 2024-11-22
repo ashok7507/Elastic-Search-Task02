@@ -76,7 +76,7 @@ Step-04: Add elasticsearch.yml
 
 - Building the Image
        
-      docker build -t custom-elasticsearch .
+      docker build -t task-elasticsearch .
   
 - Run the docker container
 
@@ -84,7 +84,7 @@ Step-04: Add elasticsearch.yml
       -p 9200:9200 -p 9300:9300 \
       -v es_data:/usr/share/elasticsearch/data \
       -v es_logs:/usr/share/elasticsearch/logs \
-      custom-elasticsearch
+      task-elasticelastic
     
 Step-05: Add docker-compose file 
     
